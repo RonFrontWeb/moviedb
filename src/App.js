@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { Link, Router } from "@reach/router"
+import Navbar from "./components/Navbar";
+import Overview from "./components/Overview"
+import Singleview from "./components/Singleview";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Link to="/overview/">PRESS</Link>
+        <Navbar/>
+      <Router>
+        <Overview path="/overview"/>
+        <Singleview path="/singleview/:id"/>
+      </Router>
     </div>
   );
 }
-
 export default App;
