@@ -5,8 +5,6 @@ import Overview from "./components/Overview"
 import Singleview from "./components/Singleview";
 import { SearchContext } from "./contexts/context.js";
 import "./App.scss";
-import Ani from "./components/Ani";
-
 
 
 
@@ -20,7 +18,7 @@ function App() {
     <SearchContext.Provider value={{value, setValue}}>
       <div className="App">
           <Navbar/>
-          <Ani/>
+          <Animation/>
         <Router>
           <Overview path="/overview"/>
           <Singleview path="/singleview/:id"/>
