@@ -9,7 +9,6 @@ import "./Overview.scss";
 function Overview() {
 
     var {value} = useContext(SearchContext);
-    console.log(value)
 
     var[content, setContent] = useState({});
 

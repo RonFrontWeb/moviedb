@@ -5,7 +5,7 @@ function Ani() {
 
 
     return (
-      <div className="animation">
+      <div className="ani">
      
       </div>
     );

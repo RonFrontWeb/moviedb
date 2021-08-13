@@ -14,7 +14,6 @@ function App() {
 
   var [value, setValue] = useState("")
 
-  console.log(value);
 
   return (
     <SearchContext.Provider value={{value, setValue}}>
