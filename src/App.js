@@ -5,7 +5,6 @@ import Overview from "./components/Overview"
 import Singleview from "./components/Singleview";
 import { SearchContext } from "./contexts/context.js";
 import "./App.scss";
-import Ani from "./components/Ani";
 import displayNotification from "./displaynotification";
 
 
@@ -26,7 +25,6 @@ function App() {
       <div className="App">
           <button className="App_notebtn" onClick={() => displayNotification("I made it!") } >Send Notification</button>
           <Navbar/>
-          <Ani/>
         <Router>
           <Overview path="/overview"/>
           <Singleview path="/singleview/:id"/>
