@@ -18,8 +18,8 @@ if("serviceWorker" in navigator){
       .then(function (regitration) {
         console.log("service Worker registered");
         
-      }), function (err) {
+      }, function (err) {
         console.log("Service Worker could not be registered. P10x")
-      }
+      })
   })
 }
