@@ -6,11 +6,17 @@ import Singleview from "./components/Singleview";
 import { SearchContext } from "./contexts/context.js";
 import "./App.scss";
 import Ani from "./components/Ani";
+import displayNotification from "./displaynotification";
 
 
 
 
 function App() {
+
+  Notification.requestPermission(function(status) {
+    console.log("Notification permission status: ", status)
+  });
+
 
   var [value, setValue] = useState("")
 
@@ -18,6 +24,7 @@ function App() {
   return (
     <SearchContext.Provider value={{value, setValue}}>
       <div className="App">
+          <button className="App_notebtn" onClick={() => displayNotification("I made it!") } >Send Notification</button>
           <Navbar/>
           <Ani/>
         <Router>
