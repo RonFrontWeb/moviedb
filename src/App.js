@@ -1,4 +1,4 @@
-import { Link, Router } from "@reach/router"
+import { Router } from "@reach/router"
 import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Overview from "./components/Overview"

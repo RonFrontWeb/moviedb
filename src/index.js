@@ -3,7 +3,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { navigate } from '@reach/router';
 
 ReactDOM.render(
   <React.StrictMode>
