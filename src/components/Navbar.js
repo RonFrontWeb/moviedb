@@ -7,17 +7,23 @@ function Navbar() {
 
 
     var [inputValue , setInputValue] = useState("");
-    var {setValue} = useContext(SearchContext);
+    var {setValue,setPictoggle} = useContext(SearchContext);
     
 
     function inputChange(event) {
       setInputValue(event.target.value)
     };
+    
     function formSubmit(event) {
       event.preventDefault();
       setValue(inputValue);
       navigate("/overview/");
       setInputValue("");
+      if (inputValue ==="") {
+        setPictoggle(true); 
+      }else {
+        setPictoggle(false);
+      }
     }
 
 

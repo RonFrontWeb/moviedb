@@ -1,21 +1,23 @@
 .overview {
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
     gap: 0;
+    overflow: hidden;
     &__picture {
         display: block;
-        height: 450px;
         width: 100%;
         object-fit: cover;
-        // margin: -3px;
         transition: .3s ease;
         filter: grayscale(50%);
-
-
     }
     &__picture:hover {
         transform: scale(1.01);
         filter: none;
 
     }
+    @media only screen and (max-width: 600px) {
+        &__picture {
+            filter: unset;
+        }
+      }
 }

@@ -1,6 +1,16 @@
-.App_notebtn {
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    
+.App {
+    background-image: url(./images/back2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    &_notebtn {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        display: flex;
+        justify-content: center;
+        font-size: 1em;
+    }
 }
+

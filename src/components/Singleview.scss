@@ -1,0 +1,16 @@
+.singleview {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__ratingbutton {
+        height: 50px;
+        width: 50px;
+        background-color: transparent;
+        border: none;
+    }
+    &__ratingbutton:hover {
+        fill: red;
+    }
+}
