@@ -50,7 +50,8 @@ function Singleview({id}) {
       console.log(db)
       getStar()
       }
-  },[db,getStar])
+      // eslint-disable-next-line
+  },[db])
 
     function getStar() {
       var transaction = db.transaction(["movies"], "readwrite");
