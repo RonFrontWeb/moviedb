@@ -22,7 +22,7 @@ function Singleview({id}) {
 
     useEffect(() => {
       setPictoggle(false);
-    },[])
+    },[setPictoggle])
 
   useEffect( () => {
     const options = {
@@ -50,7 +50,7 @@ function Singleview({id}) {
       console.log(db)
       getStar()
       }
-  },[db])
+  },[db,getStar])
 
     function getStar() {
       var transaction = db.transaction(["movies"], "readwrite");
